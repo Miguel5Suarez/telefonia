@@ -15,7 +15,7 @@ public interface TelefoniaService {
 	
 	List<TelefoniaEntity> ventasPorRango(String fechaInicio, String fechaFin);
 	
-	VentasDto ventasPorCarrier(String carrier);
+	List<VentasDto> ventasPorCarrier(String carrier, int monto);
 	
 	List<VentasDto> ventasPorMonto(int monto);
 

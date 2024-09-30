@@ -14,6 +14,9 @@ import org.springframework.stereotype.Service;
 
 import com.ejercicio.recargas.dto.VentasDto;
 import com.ejercicio.recargas.entity.TelefoniaEntity;
+//import com.ejercicio.recargas.feing.AtytFeignClient;
+//import com.ejercicio.recargas.feing.MovistarFeignClient;
+//import com.ejercicio.recargas.feing.TelcelFeignClient;
 import com.ejercicio.recargas.modelo.CompraRequest;
 import com.ejercicio.recargas.repository.CatalogosRepository;
 import com.ejercicio.recargas.repository.TelefoniaRepository;
@@ -25,6 +28,12 @@ public class TelefoniaServiceImpl implements TelefoniaService {
 	private TelefoniaRepository telefoniaRepository;
 	@Autowired
 	private CatalogosRepository catalogosRepository;
+	/*@Autowired
+	private TelcelFeignClient telcelFeignClient;
+	@Autowired
+	private MovistarFeignClient movistarFeignClient;
+	@Autowired
+	private AtytFeignClient atytFeignClient;*/
 
 	@Override
 	public ResponseEntity<String> comprar(CompraRequest compraRequest) {
@@ -42,20 +51,10 @@ public class TelefoniaServiceImpl implements TelefoniaService {
 		}
 
 		if (limite(compraRequest.getNumeroTelefono(), idPaquete)) {
-			TelefoniaEntity telefoniaEntity = new TelefoniaEntity();
-			telefoniaEntity.setFechaTransaccion(formatoFecha());
-			telefoniaEntity.setNumeroTelefonico(compraRequest.getNumeroTelefono());
-			telefoniaEntity.setHoraTransaccion(getHora());
-			telefoniaEntity.setMinutoTransaccion(getMinutos());
-			telefoniaEntity.setIdCarrier(idCarrier);
-			telefoniaEntity.setIdPaquete(idPaquete);
-			telefoniaEntity.setIdTransaccion(generarIdTransaccion());
-			telefoniaEntity.setFecha(new Date());
-			telefoniaRepository.save(telefoniaEntity);
+			compraPaquete(compraRequest.getNumeroTelefono(), compraRequest.getCarrier(), compraRequest.getMonto());
+			guardarHistorico(compraRequest.getNumeroTelefono(), idCarrier, idPaquete);
 
-			logger.info("Fecha transacción: " + telefoniaEntity.getFechaTransaccion() + " " + "Número teléfono: "
-					+ compraRequest.getNumeroTelefono() + " " + "IdTransaccion: " + telefoniaEntity.getIdTransaccion());
-			return new ResponseEntity<String>("Proceso exitoso", HttpStatus.CREATED);
+			return new ResponseEntity<String>("Proceso exitoso", HttpStatus.OK);
 		}
 		return new ResponseEntity<String>("Favor de esperar 15 minutos", HttpStatus.NOT_ACCEPTABLE);
 	}
@@ -71,9 +70,9 @@ public class TelefoniaServiceImpl implements TelefoniaService {
 	}
 
 	@Override
-	public VentasDto ventasPorCarrier(String carrier) {
+	public List<VentasDto> ventasPorCarrier(String carrier, int monto) {
 		String fecha = formatoFecha();
-		return telefoniaRepository.ventasPorCarrier(carrier, fecha);
+		return telefoniaRepository.ventasPorCarrier(carrier, fecha, monto);
 	}
 
 	@Override
@@ -89,6 +88,10 @@ public class TelefoniaServiceImpl implements TelefoniaService {
 
 	private String formatoFecha() {
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+		return simpleDateFormat.format(new java.util.Date());
+	}
+	private String formatoFechaSegundos() {
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 		return simpleDateFormat.format(new java.util.Date());
 	}
 
@@ -134,7 +137,41 @@ public class TelefoniaServiceImpl implements TelefoniaService {
 		Date fechas = new Date(milisegundos);
 		System.out.println(fechas);
 
-		return false;
+		return true;
+	}
+
+	private void compraPaquete(String numeroTelefono, String carrier, int monto) {
+		switch (carrier) {
+		case "TELCEL":
+			//telcelFeignClient.comparPaquete(numeroTelefono, carrier, monto);
+			break;
+		case "MOVISTAR":
+			////movistarFeignClient.comparPaquete(numeroTelefono, carrier, monto);
+
+			break;
+		case "AT&T":
+			//atytFeignClient.comparPaquete(numeroTelefono, carrier, monto);
+
+			break;
+		default:
+			throw new IllegalArgumentException("Telefonia incorrecta " + carrier);
+		}
+
+	}
+
+	private void guardarHistorico(String numeroTelefono, int idCarrier, int idPaquete) {
+		TelefoniaEntity telefoniaEntity = new TelefoniaEntity();
+		telefoniaEntity.setFechaTransaccion(formatoFechaSegundos());
+		telefoniaEntity.setNumeroTelefonico(numeroTelefono);
+		telefoniaEntity.setHoraTransaccion(getHora());
+		telefoniaEntity.setMinutoTransaccion(getMinutos());
+		telefoniaEntity.setIdCarrier(idCarrier);
+		telefoniaEntity.setIdPaquete(idPaquete);
+		telefoniaEntity.setIdTransaccion(generarIdTransaccion());
+		telefoniaEntity.setFecha(new Date());
+		telefoniaRepository.save(telefoniaEntity);
+		logger.info("Response: " + " " + "Fecha transacción: " + telefoniaEntity.getFechaTransaccion() + " "
+				+ "Número teléfono: " + numeroTelefono + " " + "IdTransaccion: " + telefoniaEntity.getIdTransaccion());
 	}
 
 }

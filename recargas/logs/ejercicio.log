@@ -366,3 +366,418 @@ Identify and stop the process that's listening on port 8080 or configure this ap
 2024-09-29T15:28:58.485-06:00  INFO 16064 --- [recargas] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2024-09-29T15:28:58.486-06:00  INFO 16064 --- [recargas] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
 2024-09-29T15:28:58.664-06:00  INFO 16064 --- [recargas] [http-nio-8080-exec-2] c.e.r.service.TelefoniaServiceImpl       : Request: numeroTelefono: 1234567890 Carrier: MOVISsTAR Monto: 30
+2024-09-29T19:02:11.359-06:00  INFO 15312 --- [recargas] [main] c.e.recargas.RecargasApplication         : Starting RecargasApplication using Java 17.0.11 with PID 15312 (C:\Users\ohne_\git\telefonia\recargas\target\classes started by ohne_ in C:\Users\ohne_\git\telefonia\recargas)
+2024-09-29T19:02:11.363-06:00  INFO 15312 --- [recargas] [main] c.e.recargas.RecargasApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-09-29T19:02:12.166-06:00  INFO 15312 --- [recargas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-29T19:02:12.231-06:00  INFO 15312 --- [recargas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 2 JPA repository interfaces.
+2024-09-29T19:02:12.727-06:00  INFO 15312 --- [recargas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-29T19:02:12.742-06:00  INFO 15312 --- [recargas] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-29T19:02:12.742-06:00  INFO 15312 --- [recargas] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-09-29T19:02:12.818-06:00  INFO 15312 --- [recargas] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-29T19:02:12.818-06:00  INFO 15312 --- [recargas] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1385 ms
+2024-09-29T19:02:12.955-06:00  INFO 15312 --- [recargas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-29T19:02:13.263-06:00  INFO 15312 --- [recargas] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@52b959df
+2024-09-29T19:02:13.266-06:00  INFO 15312 --- [recargas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-29T19:02:13.301-06:00  INFO 15312 --- [recargas] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-29T19:02:13.374-06:00  INFO 15312 --- [recargas] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-09-29T19:02:13.422-06:00  INFO 15312 --- [recargas] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-29T19:02:13.724-06:00  INFO 15312 --- [recargas] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-29T19:02:14.500-06:00  INFO 15312 --- [recargas] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-29T19:02:14.503-06:00  INFO 15312 --- [recargas] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-29T19:02:14.699-06:00  INFO 15312 --- [recargas] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-29T19:02:15.265-06:00  WARN 15312 --- [recargas] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-29T19:02:15.622-06:00  INFO 15312 --- [recargas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-29T19:02:15.631-06:00  INFO 15312 --- [recargas] [main] c.e.recargas.RecargasApplication         : Started RecargasApplication in 4.783 seconds (process running for 5.622)
+2024-09-29T19:02:33.481-06:00  INFO 15312 --- [recargas] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-29T19:02:33.482-06:00  INFO 15312 --- [recargas] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-29T19:02:33.485-06:00  INFO 15312 --- [recargas] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-09-29T19:05:21.252-06:00  INFO 15312 --- [recargas] [http-nio-8080-exec-5] c.e.r.service.TelefoniaServiceImpl       : Request: numeroTelefono: 1234567890 Carrier: MOVISTAR Monto: 100
+2024-09-29T19:05:21.429-06:00  INFO 15312 --- [recargas] [http-nio-8080-exec-5] c.e.r.service.TelefoniaServiceImpl       : Fecha transacción: 2024-09-29 Número teléfono: 1234567890 IdTransaccion: 5050
+2024-09-29T19:08:00.619-06:00  INFO 15312 --- [recargas] [RMI TCP Connection(16)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-09-29T19:08:01.014-06:00  INFO 15312 --- [recargas] [RMI TCP Connection(16)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-29T19:08:01.016-06:00  INFO 15312 --- [recargas] [RMI TCP Connection(16)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-29T19:08:01.028-06:00  INFO 15312 --- [recargas] [RMI TCP Connection(16)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-29T19:08:07.399-06:00  INFO 21676 --- [recargas] [main] c.e.recargas.RecargasApplication         : Starting RecargasApplication using Java 17.0.11 with PID 21676 (C:\Users\ohne_\git\telefonia\recargas\target\classes started by ohne_ in C:\Users\ohne_\git\telefonia\recargas)
+2024-09-29T19:08:07.401-06:00  INFO 21676 --- [recargas] [main] c.e.recargas.RecargasApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-09-29T19:08:08.151-06:00  INFO 21676 --- [recargas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-29T19:08:08.216-06:00  INFO 21676 --- [recargas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 2 JPA repository interfaces.
+2024-09-29T19:08:08.691-06:00  INFO 21676 --- [recargas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-29T19:08:08.701-06:00  INFO 21676 --- [recargas] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-29T19:08:08.702-06:00  INFO 21676 --- [recargas] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-09-29T19:08:08.758-06:00  INFO 21676 --- [recargas] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-29T19:08:08.759-06:00  INFO 21676 --- [recargas] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1300 ms
+2024-09-29T19:08:08.864-06:00  INFO 21676 --- [recargas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-29T19:08:09.139-06:00  INFO 21676 --- [recargas] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@35eee641
+2024-09-29T19:08:09.141-06:00  INFO 21676 --- [recargas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-29T19:08:09.173-06:00  INFO 21676 --- [recargas] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-29T19:08:09.221-06:00  INFO 21676 --- [recargas] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-09-29T19:08:09.268-06:00  INFO 21676 --- [recargas] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-29T19:08:09.553-06:00  INFO 21676 --- [recargas] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-29T19:08:10.257-06:00  INFO 21676 --- [recargas] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-29T19:08:10.260-06:00  INFO 21676 --- [recargas] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-29T19:08:10.458-06:00  INFO 21676 --- [recargas] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-29T19:08:11.012-06:00  WARN 21676 --- [recargas] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-29T19:08:11.368-06:00  INFO 21676 --- [recargas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-29T19:08:11.377-06:00  INFO 21676 --- [recargas] [main] c.e.recargas.RecargasApplication         : Started RecargasApplication in 4.449 seconds (process running for 5.145)
+2024-09-29T19:08:23.097-06:00  INFO 21676 --- [recargas] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-29T19:08:23.097-06:00  INFO 21676 --- [recargas] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-29T19:08:23.098-06:00  INFO 21676 --- [recargas] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-29T19:08:23.201-06:00 ERROR 21676 --- [recargas] [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.dao.InvalidDataAccessApiUsageException: Parameter value [2024-09-29] did not match expected type [SqmBasicValuedSimplePath(com.ejercicio.recargas.entity.TelefoniaEntity(h).fecha)]] with root cause
+
+org.hibernate.HibernateException: Could not convert 'java.lang.String' to 'java.sql.Timestamp' using 'org.hibernate.type.descriptor.java.JdbcTimestampJavaType' to wrap
+	at org.hibernate.type.descriptor.java.JavaTypeHelper.unknownWrap(JavaTypeHelper.java:28) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.type.descriptor.java.AbstractClassJavaType.unknownWrap(AbstractClassJavaType.java:116) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.type.descriptor.java.JdbcTimestampJavaType.wrap(JdbcTimestampJavaType.java:192) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.type.descriptor.java.JdbcTimestampJavaType.coerce(JdbcTimestampJavaType.java:117) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.type.descriptor.java.JdbcTimestampJavaType.coerce(JdbcTimestampJavaType.java:44) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.query.internal.QueryParameterBindingImpl.coerce(QueryParameterBindingImpl.java:164) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.query.internal.QueryParameterBindingImpl.setBindValue(QueryParameterBindingImpl.java:113) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.query.spi.AbstractCommonQueryContract.setParameter(AbstractCommonQueryContract.java:842) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.query.spi.AbstractSelectionQuery.setParameter(AbstractSelectionQuery.java:882) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.query.sqm.internal.QuerySqmImpl.setParameter(QuerySqmImpl.java:1205) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.hibernate.query.sqm.internal.QuerySqmImpl.setParameter(QuerySqmImpl.java:136) ~[hibernate-core-6.5.3.Final.jar:6.5.3.Final]
+	at org.springframework.data.jpa.repository.query.QueryParameterSetter$BindableQuery.setParameter(QueryParameterSetter.java:326) ~[spring-data-jpa-3.3.4.jar:3.3.4]
+	at org.springframework.data.jpa.repository.query.QueryParameterSetter$NamedOrIndexedQueryParameterSetter.lambda$4(QueryParameterSetter.java:117) ~[spring-data-jpa-3.3.4.jar:3.3.4]
+	at org.springframework.data.jpa.repository.query.QueryParameterSetter$ErrorHandling$1.execute(QueryParameterSetter.java:140) ~[spring-data-jpa-3.3.4.jar:3.3.4]
+	at org.springframework.data.jpa.repository.query.QueryParameterSetter$NamedOrIndexedQueryParameterSetter.setParameter(QueryParameterSetter.java:117) ~[spring-data-jpa-3.3.4.jar:3.3.4]
+	at org.springframework.data.jpa.repository.query.ParameterBinder.bind(ParameterBinder.java:86) ~[spring-data-jpa-3.3.4.jar:3.3.4]
+	at org.springframework.data.jpa.repository.query.ParameterBinder.bind(ParameterBinder.java:78) ~[spring-data-jpa-3.3.4.jar:3.3.4]
+	at org.springframework.data.jpa.repository.query.ParameterBinder.bindAndPrepare(ParameterBinder.java:100) ~[spring-data-jpa-3.3.4.jar:3.3.4]
+	at org.springframework.data.jpa.repository.query.AbstractStringBasedJpaQuery.doCreateQuery(AbstractStringBasedJpaQuery.java:130) ~[spring-data-jpa-3.3.4.jar:3.3.4]
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.createQuery(AbstractJpaQuery.java:243) ~[spring-data-jpa-3.3.4.jar:3.3.4]
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution$CollectionExecution.doExecute(JpaQueryExecution.java:129) ~[spring-data-jpa-3.3.4.jar:3.3.4]
+	at org.springframework.data.jpa.repository.query.JpaQueryExecution.execute(JpaQueryExecution.java:92) ~[spring-data-jpa-3.3.4.jar:3.3.4]
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.doExecute(AbstractJpaQuery.java:152) ~[spring-data-jpa-3.3.4.jar:3.3.4]
+	at org.springframework.data.jpa.repository.query.AbstractJpaQuery.execute(AbstractJpaQuery.java:140) ~[spring-data-jpa-3.3.4.jar:3.3.4]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170) ~[spring-data-commons-3.3.4.jar:3.3.4]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-3.3.4.jar:3.3.4]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:169) ~[spring-data-commons-3.3.4.jar:3.3.4]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:148) ~[spring-data-commons-3.3.4.jar:3.3.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70) ~[spring-data-commons-3.3.4.jar:3.3.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:379) ~[spring-tx-6.1.13.jar:6.1.13]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:138) ~[spring-tx-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:136) ~[spring-data-jpa-3.3.4.jar:3.3.4]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.13.jar:6.1.13]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223) ~[spring-aop-6.1.13.jar:6.1.13]
+	at jdk.proxy2/jdk.proxy2.$Proxy123.ventasPorCarrier(Unknown Source) ~[na:na]
+	at com.ejercicio.recargas.service.TelefoniaServiceImpl.ventasPorCarrier(TelefoniaServiceImpl.java:76) ~[classes/:na]
+	at com.ejercicio.recargas.controlador.TelefoniaControlador.obtenerVentasPorCarrier(TelefoniaControlador.java:81) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:255) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:188) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:926) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:831) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564) ~[tomcat-embed-core-10.1.30.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.30.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.13.jar:6.1.13]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:384) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:905) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1190) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.30.jar:10.1.30]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2024-09-29T19:09:26.082-06:00  INFO 21676 --- [recargas] [RMI TCP Connection(12)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-09-29T19:09:26.534-06:00  INFO 21676 --- [recargas] [RMI TCP Connection(12)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-29T19:09:26.537-06:00  INFO 21676 --- [recargas] [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-29T19:09:26.546-06:00  INFO 21676 --- [recargas] [RMI TCP Connection(12)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-29T19:09:31.840-06:00  INFO 21648 --- [recargas] [main] c.e.recargas.RecargasApplication         : Starting RecargasApplication using Java 17.0.11 with PID 21648 (C:\Users\ohne_\git\telefonia\recargas\target\classes started by ohne_ in C:\Users\ohne_\git\telefonia\recargas)
+2024-09-29T19:09:31.843-06:00  INFO 21648 --- [recargas] [main] c.e.recargas.RecargasApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-09-29T19:09:32.619-06:00  INFO 21648 --- [recargas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-29T19:09:32.702-06:00  INFO 21648 --- [recargas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 2 JPA repository interfaces.
+2024-09-29T19:09:33.235-06:00  INFO 21648 --- [recargas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-29T19:09:33.246-06:00  INFO 21648 --- [recargas] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-29T19:09:33.247-06:00  INFO 21648 --- [recargas] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-09-29T19:09:33.308-06:00  INFO 21648 --- [recargas] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-29T19:09:33.309-06:00  INFO 21648 --- [recargas] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1411 ms
+2024-09-29T19:09:33.419-06:00  INFO 21648 --- [recargas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-29T19:09:33.699-06:00  INFO 21648 --- [recargas] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@794eeaf8
+2024-09-29T19:09:33.702-06:00  INFO 21648 --- [recargas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-29T19:09:33.734-06:00  INFO 21648 --- [recargas] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-29T19:09:33.787-06:00  INFO 21648 --- [recargas] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-09-29T19:09:33.834-06:00  INFO 21648 --- [recargas] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-29T19:09:34.103-06:00  INFO 21648 --- [recargas] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-29T19:09:34.989-06:00  INFO 21648 --- [recargas] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-29T19:09:34.993-06:00  INFO 21648 --- [recargas] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-29T19:09:35.217-06:00  INFO 21648 --- [recargas] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-29T19:09:35.778-06:00  WARN 21648 --- [recargas] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-29T19:09:36.150-06:00  INFO 21648 --- [recargas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-29T19:09:36.159-06:00  INFO 21648 --- [recargas] [main] c.e.recargas.RecargasApplication         : Started RecargasApplication in 4.827 seconds (process running for 5.665)
+2024-09-29T19:09:53.636-06:00  INFO 21648 --- [recargas] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-29T19:09:53.637-06:00  INFO 21648 --- [recargas] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-29T19:09:53.638-06:00  INFO 21648 --- [recargas] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-29T19:09:53.790-06:00  INFO 21648 --- [recargas] [http-nio-8080-exec-1] c.e.r.service.TelefoniaServiceImpl       : Request: numeroTelefono: 1234567899 Carrier: MOVISTAR Monto: 100
+2024-09-29T19:09:54.030-06:00  INFO 21648 --- [recargas] [http-nio-8080-exec-1] c.e.r.service.TelefoniaServiceImpl       : Fecha transacción: 2024-09-29 Número teléfono: 1234567899 IdTransaccion: 5763
+2024-09-29T19:17:16.639-06:00  INFO 21648 --- [recargas] [http-nio-8080-exec-1] c.e.r.service.TelefoniaServiceImpl       : Request: numeroTelefono: 1234567899 Carrier: TELCEL Monto: 100
+2024-09-29T19:17:23.782-06:00  INFO 21648 --- [recargas] [http-nio-8080-exec-3] c.e.r.service.TelefoniaServiceImpl       : Request: numeroTelefono: 1234567893 Carrier: TELCEL Monto: 100
+2024-09-29T19:17:23.806-06:00  INFO 21648 --- [recargas] [http-nio-8080-exec-3] c.e.r.service.TelefoniaServiceImpl       : Fecha transacción: 2024-09-29 Número teléfono: 1234567893 IdTransaccion: 4163
+2024-09-29T19:18:38.556-06:00  INFO 21648 --- [recargas] [RMI TCP Connection(17)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-09-29T19:18:38.982-06:00  INFO 21648 --- [recargas] [RMI TCP Connection(17)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-29T19:18:38.985-06:00  INFO 21648 --- [recargas] [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-29T19:18:38.993-06:00  INFO 21648 --- [recargas] [RMI TCP Connection(17)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-29T19:18:53.572-06:00  INFO 20076 --- [recargas] [main] c.e.recargas.RecargasApplication         : Starting RecargasApplication using Java 17.0.11 with PID 20076 (C:\Users\ohne_\git\telefonia\recargas\target\classes started by ohne_ in C:\Users\ohne_\git\telefonia\recargas)
+2024-09-29T19:18:53.574-06:00  INFO 20076 --- [recargas] [main] c.e.recargas.RecargasApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-09-29T19:18:54.320-06:00  INFO 20076 --- [recargas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-29T19:18:54.390-06:00  INFO 20076 --- [recargas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 2 JPA repository interfaces.
+2024-09-29T19:18:54.859-06:00  INFO 20076 --- [recargas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-29T19:18:54.870-06:00  INFO 20076 --- [recargas] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-29T19:18:54.870-06:00  INFO 20076 --- [recargas] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-09-29T19:18:54.926-06:00  INFO 20076 --- [recargas] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-29T19:18:54.926-06:00  INFO 20076 --- [recargas] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1292 ms
+2024-09-29T19:18:55.036-06:00  INFO 20076 --- [recargas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-29T19:18:55.307-06:00  INFO 20076 --- [recargas] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2bb62414
+2024-09-29T19:18:55.309-06:00  INFO 20076 --- [recargas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-29T19:18:55.340-06:00  INFO 20076 --- [recargas] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-29T19:18:55.386-06:00  INFO 20076 --- [recargas] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-09-29T19:18:55.426-06:00  INFO 20076 --- [recargas] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-29T19:18:55.691-06:00  INFO 20076 --- [recargas] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-29T19:18:56.417-06:00  INFO 20076 --- [recargas] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-29T19:18:56.421-06:00  INFO 20076 --- [recargas] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-29T19:18:56.617-06:00  INFO 20076 --- [recargas] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-29T19:18:57.169-06:00  WARN 20076 --- [recargas] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-29T19:18:57.530-06:00  INFO 20076 --- [recargas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-29T19:18:57.539-06:00  INFO 20076 --- [recargas] [main] c.e.recargas.RecargasApplication         : Started RecargasApplication in 4.435 seconds (process running for 5.12)
+2024-09-29T19:19:18.401-06:00  INFO 20076 --- [recargas] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-29T19:19:18.401-06:00  INFO 20076 --- [recargas] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-29T19:19:18.403-06:00  INFO 20076 --- [recargas] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-09-29T19:19:18.545-06:00  INFO 20076 --- [recargas] [http-nio-8080-exec-1] c.e.r.service.TelefoniaServiceImpl       : Request: numeroTelefono: 1234567893 Carrier: MOVISTAR Monto: 100
+2024-09-29T19:19:25.087-06:00  INFO 20076 --- [recargas] [RMI TCP Connection(8)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-09-29T19:19:25.534-06:00  INFO 20076 --- [recargas] [RMI TCP Connection(8)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-29T19:19:25.536-06:00  INFO 20076 --- [recargas] [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-29T19:19:25.544-06:00  INFO 20076 --- [recargas] [RMI TCP Connection(8)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-29T19:19:39.099-06:00  INFO 3836 --- [recargas] [main] c.e.recargas.RecargasApplication         : Starting RecargasApplication using Java 17.0.11 with PID 3836 (C:\Users\ohne_\git\telefonia\recargas\target\classes started by ohne_ in C:\Users\ohne_\git\telefonia\recargas)
+2024-09-29T19:19:39.101-06:00  INFO 3836 --- [recargas] [main] c.e.recargas.RecargasApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-09-29T19:19:39.953-06:00  INFO 3836 --- [recargas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-29T19:19:40.030-06:00  INFO 3836 --- [recargas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 2 JPA repository interfaces.
+2024-09-29T19:19:40.652-06:00  INFO 3836 --- [recargas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-29T19:19:40.685-06:00  INFO 3836 --- [recargas] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-29T19:19:40.686-06:00  INFO 3836 --- [recargas] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-09-29T19:19:40.772-06:00  INFO 3836 --- [recargas] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-29T19:19:40.773-06:00  INFO 3836 --- [recargas] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1611 ms
+2024-09-29T19:19:40.941-06:00  INFO 3836 --- [recargas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-29T19:19:41.303-06:00  INFO 3836 --- [recargas] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@eed890d
+2024-09-29T19:19:41.306-06:00  INFO 3836 --- [recargas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-29T19:19:41.340-06:00  INFO 3836 --- [recargas] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-29T19:19:41.405-06:00  INFO 3836 --- [recargas] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-09-29T19:19:41.447-06:00  INFO 3836 --- [recargas] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-29T19:19:41.722-06:00  INFO 3836 --- [recargas] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-29T19:19:42.634-06:00  INFO 3836 --- [recargas] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-29T19:19:42.638-06:00  INFO 3836 --- [recargas] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-29T19:19:42.856-06:00  INFO 3836 --- [recargas] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-29T19:19:43.436-06:00  WARN 3836 --- [recargas] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-29T19:19:43.804-06:00  INFO 3836 --- [recargas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-29T19:19:43.813-06:00  INFO 3836 --- [recargas] [main] c.e.recargas.RecargasApplication         : Started RecargasApplication in 5.236 seconds (process running for 6.013)
+2024-09-29T19:19:52.254-06:00  INFO 3836 --- [recargas] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-29T19:19:52.255-06:00  INFO 3836 --- [recargas] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-29T19:19:52.257-06:00  INFO 3836 --- [recargas] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-09-29T19:19:52.419-06:00  INFO 3836 --- [recargas] [http-nio-8080-exec-2] c.e.r.service.TelefoniaServiceImpl       : Request: numeroTelefono: 1234567893 Carrier: MOVISTAR Monto: 100
+2024-09-29T19:19:52.666-06:00  INFO 3836 --- [recargas] [http-nio-8080-exec-2] c.e.r.service.TelefoniaServiceImpl       : Fecha transacción: 2024-09-29 Número teléfono: 1234567893 IdTransaccion: 1523
+2024-09-29T19:19:56.070-06:00  INFO 3836 --- [recargas] [http-nio-8080-exec-3] c.e.r.service.TelefoniaServiceImpl       : Request: numeroTelefono: 1234567893 Carrier: AT&T Monto: 100
+2024-09-29T19:19:56.091-06:00  INFO 3836 --- [recargas] [http-nio-8080-exec-3] c.e.r.service.TelefoniaServiceImpl       : Fecha transacción: 2024-09-29 Número teléfono: 1234567893 IdTransaccion: 4531
+2024-09-29T19:19:59.487-06:00  INFO 3836 --- [recargas] [http-nio-8080-exec-4] c.e.r.service.TelefoniaServiceImpl       : Request: numeroTelefono: 1234567893 Carrier: AT&T Monto: 100
+2024-09-29T19:19:59.503-06:00  INFO 3836 --- [recargas] [http-nio-8080-exec-4] c.e.r.service.TelefoniaServiceImpl       : Fecha transacción: 2024-09-29 Número teléfono: 1234567893 IdTransaccion: 4080
+2024-09-29T19:20:00.842-06:00  INFO 3836 --- [recargas] [http-nio-8080-exec-5] c.e.r.service.TelefoniaServiceImpl       : Request: numeroTelefono: 1234567893 Carrier: AT&T Monto: 100
+2024-09-29T19:20:00.858-06:00  INFO 3836 --- [recargas] [http-nio-8080-exec-5] c.e.r.service.TelefoniaServiceImpl       : Fecha transacción: 2024-09-29 Número teléfono: 1234567893 IdTransaccion: 7616
+2024-09-29T19:20:01.645-06:00  INFO 3836 --- [recargas] [http-nio-8080-exec-6] c.e.r.service.TelefoniaServiceImpl       : Request: numeroTelefono: 1234567893 Carrier: AT&T Monto: 100
+2024-09-29T19:20:01.659-06:00  INFO 3836 --- [recargas] [http-nio-8080-exec-6] c.e.r.service.TelefoniaServiceImpl       : Fecha transacción: 2024-09-29 Número teléfono: 1234567893 IdTransaccion: 2181
+2024-09-29T19:20:02.271-06:00  INFO 3836 --- [recargas] [http-nio-8080-exec-7] c.e.r.service.TelefoniaServiceImpl       : Request: numeroTelefono: 1234567893 Carrier: AT&T Monto: 100
+2024-09-29T19:20:02.288-06:00  INFO 3836 --- [recargas] [http-nio-8080-exec-7] c.e.r.service.TelefoniaServiceImpl       : Fecha transacción: 2024-09-29 Número teléfono: 1234567893 IdTransaccion: 3087
+2024-09-29T19:20:03.490-06:00  INFO 3836 --- [recargas] [http-nio-8080-exec-8] c.e.r.service.TelefoniaServiceImpl       : Request: numeroTelefono: 1234567893 Carrier: AT&T Monto: 100
+2024-09-29T19:20:03.509-06:00  INFO 3836 --- [recargas] [http-nio-8080-exec-8] c.e.r.service.TelefoniaServiceImpl       : Fecha transacción: 2024-09-29 Número teléfono: 1234567893 IdTransaccion: 9556
+2024-09-29T19:20:04.157-06:00  INFO 3836 --- [recargas] [http-nio-8080-exec-9] c.e.r.service.TelefoniaServiceImpl       : Request: numeroTelefono: 1234567893 Carrier: AT&T Monto: 100
+2024-09-29T19:20:04.247-06:00  INFO 3836 --- [recargas] [http-nio-8080-exec-9] c.e.r.service.TelefoniaServiceImpl       : Fecha transacción: 2024-09-29 Número teléfono: 1234567893 IdTransaccion: 2385
+2024-09-29T19:22:21.713-06:00  INFO 3836 --- [recargas] [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-09-29T19:22:22.084-06:00  INFO 3836 --- [recargas] [RMI TCP Connection(13)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-29T19:22:22.086-06:00  INFO 3836 --- [recargas] [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-29T19:22:22.094-06:00  INFO 3836 --- [recargas] [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-29T19:22:25.723-06:00  INFO 15212 --- [recargas] [main] c.e.recargas.RecargasApplication         : Starting RecargasApplication using Java 17.0.11 with PID 15212 (C:\Users\ohne_\git\telefonia\recargas\target\classes started by ohne_ in C:\Users\ohne_\git\telefonia\recargas)
+2024-09-29T19:22:25.727-06:00  INFO 15212 --- [recargas] [main] c.e.recargas.RecargasApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-09-29T19:22:26.464-06:00  INFO 15212 --- [recargas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-29T19:22:26.531-06:00  INFO 15212 --- [recargas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 2 JPA repository interfaces.
+2024-09-29T19:22:26.987-06:00  INFO 15212 --- [recargas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-29T19:22:26.998-06:00  INFO 15212 --- [recargas] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-29T19:22:26.998-06:00  INFO 15212 --- [recargas] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-09-29T19:22:27.053-06:00  INFO 15212 --- [recargas] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-29T19:22:27.054-06:00  INFO 15212 --- [recargas] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1268 ms
+2024-09-29T19:22:27.162-06:00  INFO 15212 --- [recargas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-29T19:22:27.428-06:00  INFO 15212 --- [recargas] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@37c5284a
+2024-09-29T19:22:27.431-06:00  INFO 15212 --- [recargas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-29T19:22:27.464-06:00  INFO 15212 --- [recargas] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-29T19:22:27.513-06:00  INFO 15212 --- [recargas] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-09-29T19:22:27.559-06:00  INFO 15212 --- [recargas] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-29T19:22:27.822-06:00  INFO 15212 --- [recargas] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-29T19:22:28.592-06:00  INFO 15212 --- [recargas] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-29T19:22:28.598-06:00  INFO 15212 --- [recargas] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-29T19:22:28.791-06:00  INFO 15212 --- [recargas] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-29T19:22:29.385-06:00  WARN 15212 --- [recargas] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-29T19:22:29.753-06:00  INFO 15212 --- [recargas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-29T19:22:29.764-06:00  INFO 15212 --- [recargas] [main] c.e.recargas.RecargasApplication         : Started RecargasApplication in 4.555 seconds (process running for 5.228)
+2024-09-29T19:22:39.022-06:00  INFO 15212 --- [recargas] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-29T19:22:39.023-06:00  INFO 15212 --- [recargas] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-29T19:22:39.024-06:00  INFO 15212 --- [recargas] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-09-29T19:22:39.173-06:00  INFO 15212 --- [recargas] [http-nio-8080-exec-1] c.e.r.service.TelefoniaServiceImpl       : Request: numeroTelefono: 1234567893 Carrier: TELCEL Monto: 100
+2024-09-29T19:22:39.392-06:00  INFO 15212 --- [recargas] [http-nio-8080-exec-1] c.e.r.service.TelefoniaServiceImpl       : Response:  Fecha transacción: 2024-09-29 Número teléfono: 1234567893 IdTransaccion: 8441
+2024-09-29T19:22:45.204-06:00  INFO 15212 --- [recargas] [http-nio-8080-exec-3] c.e.r.service.TelefoniaServiceImpl       : Request: numeroTelefono: 1234567893 Carrier: TELCEL Monto: 100
+2024-09-29T19:22:45.223-06:00  INFO 15212 --- [recargas] [http-nio-8080-exec-3] c.e.r.service.TelefoniaServiceImpl       : Response:  Fecha transacción: 2024-09-29 Número teléfono: 1234567893 IdTransaccion: 2197
+2024-09-29T19:23:04.647-06:00  INFO 15212 --- [recargas] [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-09-29T19:23:05.106-06:00  INFO 15212 --- [recargas] [RMI TCP Connection(9)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-29T19:23:05.108-06:00  INFO 15212 --- [recargas] [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-29T19:23:05.117-06:00  INFO 15212 --- [recargas] [RMI TCP Connection(9)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-29T19:23:10.967-06:00  INFO 22132 --- [recargas] [main] c.e.recargas.RecargasApplication         : Starting RecargasApplication using Java 17.0.11 with PID 22132 (C:\Users\ohne_\git\telefonia\recargas\target\classes started by ohne_ in C:\Users\ohne_\git\telefonia\recargas)
+2024-09-29T19:23:10.970-06:00  INFO 22132 --- [recargas] [main] c.e.recargas.RecargasApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-09-29T19:23:11.719-06:00  INFO 22132 --- [recargas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-29T19:23:11.782-06:00  INFO 22132 --- [recargas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 57 ms. Found 2 JPA repository interfaces.
+2024-09-29T19:23:12.249-06:00  INFO 22132 --- [recargas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-29T19:23:12.260-06:00  INFO 22132 --- [recargas] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-29T19:23:12.260-06:00  INFO 22132 --- [recargas] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-09-29T19:23:12.313-06:00  INFO 22132 --- [recargas] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-29T19:23:12.314-06:00  INFO 22132 --- [recargas] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1280 ms
+2024-09-29T19:23:12.425-06:00  INFO 22132 --- [recargas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-29T19:23:12.689-06:00  INFO 22132 --- [recargas] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2443135
+2024-09-29T19:23:12.691-06:00  INFO 22132 --- [recargas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-29T19:23:12.724-06:00  INFO 22132 --- [recargas] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-29T19:23:12.772-06:00  INFO 22132 --- [recargas] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-09-29T19:23:12.818-06:00  INFO 22132 --- [recargas] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-29T19:23:13.083-06:00  INFO 22132 --- [recargas] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-29T19:23:13.810-06:00  INFO 22132 --- [recargas] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-29T19:23:13.815-06:00  INFO 22132 --- [recargas] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-29T19:23:14.004-06:00  INFO 22132 --- [recargas] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-29T19:23:14.531-06:00  WARN 22132 --- [recargas] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-29T19:23:14.879-06:00  INFO 22132 --- [recargas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-29T19:23:14.888-06:00  INFO 22132 --- [recargas] [main] c.e.recargas.RecargasApplication         : Started RecargasApplication in 4.383 seconds (process running for 5.054)
+2024-09-29T19:23:22.813-06:00  INFO 22132 --- [recargas] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-09-29T19:23:22.813-06:00  INFO 22132 --- [recargas] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-09-29T19:23:22.817-06:00  INFO 22132 --- [recargas] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-09-29T19:23:22.996-06:00  INFO 22132 --- [recargas] [http-nio-8080-exec-1] c.e.r.service.TelefoniaServiceImpl       : Request: numeroTelefono: 1234567893 Carrier: TELCEL Monto: 100
+2024-09-29T19:23:23.218-06:00  INFO 22132 --- [recargas] [http-nio-8080-exec-1] c.e.r.service.TelefoniaServiceImpl       : Response:  Fecha transacción: 2024-09-29 Número teléfono: 1234567893 IdTransaccion: 8184
+2024-09-29T19:23:24.563-06:00  INFO 22132 --- [recargas] [http-nio-8080-exec-3] c.e.r.service.TelefoniaServiceImpl       : Request: numeroTelefono: 1234567893 Carrier: TELCEL Monto: 100
+2024-09-29T19:23:24.580-06:00  INFO 22132 --- [recargas] [http-nio-8080-exec-3] c.e.r.service.TelefoniaServiceImpl       : Response:  Fecha transacción: 2024-09-29 Número teléfono: 1234567893 IdTransaccion: 5135
+2024-09-29T19:23:25.612-06:00  INFO 22132 --- [recargas] [http-nio-8080-exec-4] c.e.r.service.TelefoniaServiceImpl       : Request: numeroTelefono: 1234567893 Carrier: TELCEL Monto: 100
+2024-09-29T19:23:25.642-06:00  INFO 22132 --- [recargas] [http-nio-8080-exec-4] c.e.r.service.TelefoniaServiceImpl       : Response:  Fecha transacción: 2024-09-29 Número teléfono: 1234567893 IdTransaccion: 1597
+2024-09-29T19:23:26.743-06:00  INFO 22132 --- [recargas] [http-nio-8080-exec-5] c.e.r.service.TelefoniaServiceImpl       : Request: numeroTelefono: 1234567893 Carrier: TELCEL Monto: 100
+2024-09-29T19:23:26.767-06:00  INFO 22132 --- [recargas] [http-nio-8080-exec-5] c.e.r.service.TelefoniaServiceImpl       : Response:  Fecha transacción: 2024-09-29 Número teléfono: 1234567893 IdTransaccion: 1621
+2024-09-29T21:21:42.767-06:00  INFO 22132 --- [recargas] [RMI TCP Connection(127)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2024-09-29T21:21:48.049-06:00  INFO 22132 --- [recargas] [RMI TCP Connection(127)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-29T21:21:48.950-06:00  INFO 22132 --- [recargas] [RMI TCP Connection(127)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-29T21:21:49.110-06:00  INFO 22132 --- [recargas] [RMI TCP Connection(127)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-29T21:45:41.183-06:00  INFO 11368 --- [recargas] [main] c.e.recargas.RecargasApplication         : Starting RecargasApplication using Java 17.0.11 with PID 11368 (C:\Users\ohne_\git\telefonia\recargas\target\classes started by ohne_ in C:\Users\ohne_\git\telefonia\recargas)
+2024-09-29T21:45:41.190-06:00  INFO 11368 --- [recargas] [main] c.e.recargas.RecargasApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-09-29T21:45:43.427-06:00  INFO 11368 --- [recargas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-29T21:45:43.602-06:00  INFO 11368 --- [recargas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 149 ms. Found 2 JPA repository interfaces.
+2024-09-29T21:45:44.015-06:00  INFO 11368 --- [recargas] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c52e6ffa-009e-396d-a94a-e8d50ef48aa4
+2024-09-29T21:45:45.020-06:00  INFO 11368 --- [recargas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-29T21:45:45.058-06:00  INFO 11368 --- [recargas] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-29T21:45:45.059-06:00  INFO 11368 --- [recargas] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-09-29T21:45:45.250-06:00  INFO 11368 --- [recargas] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-29T21:45:45.253-06:00  INFO 11368 --- [recargas] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3925 ms
+2024-09-29T21:45:45.632-06:00  INFO 11368 --- [recargas] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-29T21:45:45.826-06:00  INFO 11368 --- [recargas] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-09-29T21:45:45.933-06:00  INFO 11368 --- [recargas] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-29T21:45:46.637-06:00  INFO 11368 --- [recargas] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-29T21:45:46.700-06:00  INFO 11368 --- [recargas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-29T21:45:47.946-06:00  INFO 11368 --- [recargas] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e97f115
+2024-09-29T21:45:47.953-06:00  INFO 11368 --- [recargas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-29T21:45:50.961-06:00  INFO 11368 --- [recargas] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-29T21:45:53.362-06:00  INFO 11368 --- [recargas] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-29T21:45:54.031-06:00  INFO 11368 --- [recargas] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-29T21:45:55.812-06:00  WARN 11368 --- [recargas] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-29T21:45:57.528-06:00  WARN 11368 --- [recargas] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'compositeCompatibilityVerifier' defined in class path resource [org/springframework/cloud/configuration/CompatibilityVerifierAutoConfiguration.class]: Failed to instantiate [org.springframework.cloud.configuration.CompositeCompatibilityVerifier]: Factory method 'compositeCompatibilityVerifier' threw exception with message: Spring Cloud/ Spring Boot version compatibility checks have failed: [[VerificationResult@65a42136 description = 'Spring Boot [3.3.4] is not compatible with this Spring Cloud release train', action = 'Change Spring Boot version to one of the following versions [3.2.x] .
+You can find the latest Spring Boot versions here [https://spring.io/projects/spring-boot#learn]. 
+If you want to learn more about the Spring Cloud Release train compatibility, you can visit this page [https://spring.io/projects/spring-cloud#overview] and check the [Release Trains] section.
+If you want to disable this check, just set the property [spring.cloud.compatibility-verifier.enabled=false]']]
+2024-09-29T21:45:57.534-06:00  INFO 11368 --- [recargas] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-09-29T21:45:57.541-06:00  INFO 11368 --- [recargas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-09-29T21:45:57.574-06:00  INFO 11368 --- [recargas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-09-29T21:45:57.580-06:00  INFO 11368 --- [recargas] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-09-29T21:45:57.640-06:00  INFO 11368 --- [recargas] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-09-29T21:45:57.742-06:00 ERROR 11368 --- [recargas] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Your project setup is incompatible with our requirements due to following reasons:
+
+- Spring Boot [3.3.4] is not compatible with this Spring Cloud release train
+
+
+Action:
+
+Consider applying the following actions:
+
+- Change Spring Boot version to one of the following versions [3.2.x] .
+You can find the latest Spring Boot versions here [https://spring.io/projects/spring-boot#learn]. 
+If you want to learn more about the Spring Cloud Release train compatibility, you can visit this page [https://spring.io/projects/spring-cloud#overview] and check the [Release Trains] section.
+If you want to disable this check, just set the property [spring.cloud.compatibility-verifier.enabled=false]
+
+
+2024-09-29T21:49:47.228-06:00  INFO 324 --- [recargas] [main] c.e.recargas.RecargasApplication         : Starting RecargasApplication using Java 17.0.11 with PID 324 (C:\Users\ohne_\git\telefonia\recargas\target\classes started by ohne_ in C:\Users\ohne_\git\telefonia\recargas)
+2024-09-29T21:49:47.234-06:00  INFO 324 --- [recargas] [main] c.e.recargas.RecargasApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-09-29T21:49:49.236-06:00  INFO 324 --- [recargas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-09-29T21:49:49.404-06:00  INFO 324 --- [recargas] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 147 ms. Found 2 JPA repository interfaces.
+2024-09-29T21:49:49.822-06:00  INFO 324 --- [recargas] [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=c52e6ffa-009e-396d-a94a-e8d50ef48aa4
+2024-09-29T21:49:50.764-06:00  INFO 324 --- [recargas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-09-29T21:49:50.802-06:00  INFO 324 --- [recargas] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-09-29T21:49:50.803-06:00  INFO 324 --- [recargas] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-09-29T21:49:51.022-06:00  INFO 324 --- [recargas] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-09-29T21:49:51.024-06:00  INFO 324 --- [recargas] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3653 ms
+2024-09-29T21:49:51.363-06:00  INFO 324 --- [recargas] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-09-29T21:49:51.548-06:00  INFO 324 --- [recargas] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-09-29T21:49:51.670-06:00  INFO 324 --- [recargas] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-09-29T21:49:52.357-06:00  INFO 324 --- [recargas] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-09-29T21:49:52.424-06:00  INFO 324 --- [recargas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-09-29T21:49:53.279-06:00  INFO 324 --- [recargas] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1b94c789
+2024-09-29T21:49:53.286-06:00  INFO 324 --- [recargas] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-09-29T21:49:55.699-06:00  INFO 324 --- [recargas] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-09-29T21:49:55.844-06:00  INFO 324 --- [recargas] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-09-29T21:49:56.364-06:00  INFO 324 --- [recargas] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2024-09-29T21:49:57.975-06:00  WARN 324 --- [recargas] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-09-29T21:49:59.782-06:00  INFO 324 --- [recargas] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-09-29T21:50:00.432-06:00  INFO 324 --- [recargas] [main] c.e.recargas.RecargasApplication         : Started RecargasApplication in 15.229 seconds (process running for 17.356)

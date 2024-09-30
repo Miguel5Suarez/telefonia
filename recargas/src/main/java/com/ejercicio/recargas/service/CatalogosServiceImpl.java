@@ -31,10 +31,20 @@ public class CatalogosServiceImpl implements CatalogosService{
 				.map(this::convertDTO).collect(Collectors.toList());
 	}
 
+	/**
+	 * Método para copiar datos de entidad a Dto
+	 * @param carrier
+	 * @return CarrierDto
+	 */
     private CarrierDto convertirDTO(CarrierEntity carrier) {
         return new CarrierDto(carrier.getId(), carrier.getNombre());
     }
     
+    /**
+	 * Método para copiar datos de entidad a Dto
+	 * @param paquetes
+	 * @return PaquetesDto
+	 */
     private PaquetesDto convertDTO(PaquetesEntity paquetes) {
         return new PaquetesDto(paquetes.getId(), paquetes.getNombre(), paquetes.getValor());
     }

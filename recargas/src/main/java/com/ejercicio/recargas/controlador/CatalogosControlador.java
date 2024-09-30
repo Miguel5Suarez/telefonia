@@ -17,11 +17,19 @@ public class CatalogosControlador {
 	@Autowired
 	private CatalogosService catalogosService;
 
+	/**
+	 * Método para consultar catálogo de telefonia
+	 * @return List<CarrierDto>
+	 */
 	@GetMapping("/carrier")
 	public List<CarrierDto> consultaCarrier() {
 		return catalogosService.getCarrier();
 	}
 
+	/**
+	 * Método para consultar catálogo de paquetes telefónicos
+	 * @return List<PaquetesDto>
+	 */
 	@GetMapping("/paquetes")
 	public List<PaquetesDto> consultaPaquetes() {
 		return catalogosService.getPaquetes();

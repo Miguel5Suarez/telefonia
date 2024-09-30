@@ -16,7 +16,7 @@ public interface TelefoniaRepository extends JpaRepository<TelefoniaEntity, Long
 			  + " from HISTORICO_VENTAS h, CARRIER c, PAQUETES_TELEFONICOS p"
 			  + " where h.id_carrier = c.id"
 			  + " and h.id_paquete = p.id"
-			  + " and h.fecha = CURRENT_DATE();"
+			  + " and h.fecha_transaccion = CURRENT_DATE();"
 			  , nativeQuery = true)
 	List<TelefoniaEntity> totalVentas();
 	
@@ -24,7 +24,7 @@ public interface TelefoniaRepository extends JpaRepository<TelefoniaEntity, Long
 			  + " from HISTORICO_VENTAS h, CARRIER c, PAQUETES_TELEFONICOS p"
 			  + " where h.id_carrier = c.id"
 			  + " and h.id_paquete = p.id"
-			  + " and h.fecha BETWEEN :fechaInicio AND :fechaFin;"
+			  + " and h.fecha_transaccion BETWEEN :fechaInicio AND :fechaFin;"
 			  , nativeQuery = true)
 	List<TelefoniaEntity> ventasPorRango(@Param("fechaInicio") String fechaInicio, 
 			@Param("fechaFin") String fechaFin);
@@ -35,8 +35,9 @@ public interface TelefoniaRepository extends JpaRepository<TelefoniaEntity, Long
 		      + "join PaquetesEntity p on h.idPaquete = p.id "
 		      + "where c.nombre = :carrier "
 		      + "and h.fechaTransaccion = :fecha "
+		      + "and p.valor = :monto "
 		      + "group by p.valor")
-	VentasDto ventasPorCarrier(@Param("carrier") String carrier, @Param("fecha") String fecha);
+	List<VentasDto> ventasPorCarrier(@Param("carrier") String carrier, @Param("fecha") String fecha, @Param("monto") int monto);
 	
 	@Query("select new com.ejercicio.recargas.dto.VentasDto(sum(p.valor), count(h.id), c.nombre, p.valor) "
 		      + "from TelefoniaEntity h "
