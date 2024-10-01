@@ -3,8 +3,10 @@ package com.ejercicio.recargas.feing;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PostMapping;
 
-/*@FeignClient(name = "movistarClient", url = "https://api.movistar.com")
+import com.ejercicio.recargas.modelo.TelefoniaRequest;
+
+@FeignClient(name = "movistarClient", url = "http://localhost:8082/telefonia")
 public interface MovistarFeignClient {
 	@PostMapping("/movistar/recarga")
-	void comparPaquete(String numeroTelefono, String carrier, int monto);
-}*/
+	void comparPaquete(TelefoniaRequest telefoniaRequest);
+}

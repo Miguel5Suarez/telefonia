@@ -25,13 +25,6 @@ public class TelefoniaEntity {
 	private int idPaquete;
 	@Column(name = "id_carrier")
 	private int idCarrier;
-	@Column(name = "hora_transaccion")
-	private int horaTransaccion;
-	@Column(name = "minuto_transaccion")
-	private int minutoTransaccion;
-	@Column(name = "fecha")
-	private Date fecha;
-
 
 	public String getNumeroTelefonico() {
 		return numeroTelefonico;
@@ -71,30 +64,6 @@ public class TelefoniaEntity {
 
 	public void setIdCarrier(int idCarrier) {
 		this.idCarrier = idCarrier;
-	}
-
-	public int getHoraTransaccion() {
-		return horaTransaccion;
-	}
-
-	public void setHoraTransaccion(int horaTransaccion) {
-		this.horaTransaccion = horaTransaccion;
-	}
-
-	public int getMinutoTransaccion() {
-		return minutoTransaccion;
-	}
-
-	public void setMinutoTransaccion(int minutoTransaccion) {
-		this.minutoTransaccion = minutoTransaccion;
-	}
-
-	public Date getFecha() {
-		return fecha;
-	}
-
-	public void setFecha(Date fecha) {
-		this.fecha = fecha;
 	}
 
 }

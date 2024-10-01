@@ -20,7 +20,6 @@ import jakarta.validation.Valid;
 import jakarta.validation.constraints.Max;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotEmpty;
-import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 
 @RestController
@@ -64,6 +63,16 @@ public class TelefoniaControlador {
             message = "El formato de la fechaFin debe ser YYYY-MM-DD.")
 			@RequestParam(required = true) String fechaFin) {
 		return telefoniaService.ventasPorRango(fechaInicio, fechaFin);
+	}
+	
+	/**
+	 * Método para obtener el total de paquetes vendidos  del día actual
+	 * @param carrier
+	 * @return VentasDto
+	 */
+	@GetMapping("/compras/total")
+	public List<VentasDto> obtenerTotalVentas() {
+		return telefoniaService.ventasTotal();
 	}
 
 	/**

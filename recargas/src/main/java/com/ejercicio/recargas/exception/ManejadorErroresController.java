@@ -1,4 +1,4 @@
-package com.ejercicio.recargas.controlador;
+package com.ejercicio.recargas.exception;
 
 import java.util.HashMap;
 import java.util.Map;
