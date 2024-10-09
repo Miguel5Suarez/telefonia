@@ -32,12 +32,12 @@ public class TelefoniaServiceImpl implements TelefoniaService {
 	private TelefoniaRepository telefoniaRepository;
 	@Autowired
 	private CatalogosRepository catalogosRepository;
-	@Autowired
+	/*@Autowired
 	private TelcelFeignClient telcelFeignClient;
 	@Autowired
 	private MovistarFeignClient movistarFeignClient;
 	@Autowired
-	private AtytFeignClient atytFeignClient;
+	private AtytFeignClient atytFeignClient;*/
 
 	@Override
 	public ResponseEntity<String> comprar(CompraRequest compraRequest) {
@@ -80,7 +80,7 @@ public class TelefoniaServiceImpl implements TelefoniaService {
 
 	@Override
 	public List<VentasDto> ventasPorCarrier(String carrier, int monto) {
-		return telefoniaRepository.ventasPorCarrier(carrier, /* fecha, */ monto);
+		return telefoniaRepository.ventasPorCarrier(carrier, monto);
 	}
 
 	@Override
@@ -190,14 +190,14 @@ public class TelefoniaServiceImpl implements TelefoniaService {
 		telefoniaRequest.setMonto(monto);
 		switch (carrier) {
 		case "TELCEL":
-			telcelFeignClient.comparPaquete(telefoniaRequest);
+//			telcelFeignClient.comparPaquete(telefoniaRequest);
 			break;
 		case "MOVISTAR":
-			movistarFeignClient.comparPaquete(telefoniaRequest);
+//			movistarFeignClient.comparPaquete(telefoniaRequest);
 
 			break;
 		case "AT&T":
-			atytFeignClient.comparPaquete(telefoniaRequest);
+//			atytFeignClient.comparPaquete(telefoniaRequest);
 
 			break;
 		default:

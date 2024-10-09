@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import com.ejercicio.recargas.modelo.TelefoniaRequest;
 
-@FeignClient(name = "telcelClient", url = "http://localhost:8082/telefonia")
+//@FeignClient(name = "telcelClient", url = "http://localhost:8082/telefonia")
 public interface TelcelFeignClient {
 	@PostMapping("/telcel/recarga")
 	void comparPaquete(TelefoniaRequest telefoniaRequest);
